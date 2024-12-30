@@ -1,0 +1,912 @@
+INFO - 2024-07-11 02:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 02:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 06:19:22 --> ErrorException: Undefined variable $jml_pemasok
+in APPPATH\Views\dashboard\ringkasan.php on line 13.
+ 1 APPPATH\Views\dashboard\ringkasan.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_pemasok', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(24): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 06:19:41 --> ErrorException: Undefined variable $jml_pemasok
+in APPPATH\Views\dashboard\ringkasan.php on line 13.
+ 1 APPPATH\Views\dashboard\ringkasan.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_pemasok', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(24): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 06:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 06:19:44 --> ErrorException: Undefined variable $jml_pemasok
+in APPPATH\Views\dashboard\ringkasan.php on line 13.
+ 1 APPPATH\Views\dashboard\ringkasan.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_pemasok', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(24): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 06:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 06:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:05:00 --> ErrorException: Undefined variable $jml_po_pelanggan_selesai
+in APPPATH\Views\dashboard\ringkasan.php on line 64.
+ 1 APPPATH\Views\dashboard\ringkasan.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_po_pelanggan_selesai', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(32): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:05:19 --> ErrorException: Undefined variable $jml_po_pelanggan_selesai
+in APPPATH\Views\dashboard\ringkasan.php on line 64.
+ 1 APPPATH\Views\dashboard\ringkasan.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_po_pelanggan_selesai', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(32): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:35:37 --> BadMethodCallException: Call to undefined method App\Models\ModelItem::getHighestAndLowestPurchasedProducts
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Dashboard.php(30): CodeIgniter\Model->__call('getHighestAndLowestPurchasedProducts', [])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:39:42 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\ModelItem". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 895.
+ 1 SYSTEMPATH\Model.php(895): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\ModelItem', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(875): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\ModelItem.php(66): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Dashboard.php(30): App\Models\ModelItem->getHighestAndLowestPurchasedProducts()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:40:58 --> Error: Array callback has to contain indices 0 and 1
+in APPPATH\Views\dashboard\ringkasan.php on line 86.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(35): view('dashboard/ringkasan')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:49:09 --> ErrorException: Undefined array key "merk"
+in APPPATH\Helpers\Data_helper.php on line 32.
+ 1 APPPATH\Helpers\Data_helper.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "merk"', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Helpers\\Data_helper.php', 32)
+ 2 APPPATH\Views\dashboard\ringkasan.php(86): produk_define('2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(35): view('dashboard/ringkasan')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 07:49:11 --> ErrorException: Undefined array key "merk"
+in APPPATH\Helpers\Data_helper.php on line 32.
+ 1 APPPATH\Helpers\Data_helper.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "merk"', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Helpers\\Data_helper.php', 32)
+ 2 APPPATH\Views\dashboard\ringkasan.php(86): produk_define('2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(35): view('dashboard/ringkasan')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 07:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 07:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 08:08:33 --> mysqli_sql_exception: Column 'id_po_pelanggan' in field list is ambiguous in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_po_p...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_po_p...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_po_p...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_po_p...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\app\Models\ModelDo.php(84): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(33): App\Models\ModelDo->getMostAndLeastFrequentCustomers()
+#6 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-11 08:08:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_po_pelanggan' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1', [], false)
+ 2 APPPATH\Models\ModelDo.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(33): App\Models\ModelDo->getMostAndLeastFrequentCustomers()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 08:08:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_po_pelanggan' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1', [], false)
+ 4 APPPATH\Models\ModelDo.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(33): App\Models\ModelDo->getMostAndLeastFrequentCustomers()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 08:08:33 --> [Caused by] mysqli_sql_exception: Column 'id_po_pelanggan' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_po_pelanggan`
+FROM `do`
+LEFT JOIN (SELECT `id_po_pelanggan`, COUNT(*) as total
+FROM `do`
+GROUP BY `id_po_pelanggan`) as do_subquery ON `do`.`id_po_pelanggan` = `do_subquery`.`id_po_pelanggan`
+ORDER BY `do_subquery`.`total` DESC
+ LIMIT 1', [], false)
+ 5 APPPATH\Models\ModelDo.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(33): App\Models\ModelDo->getMostAndLeastFrequentCustomers()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 08:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 08:11:00 --> ErrorException: Undefined variable $pelanggan_beli
+in APPPATH\Views\dashboard\ringkasan.php on line 108.
+ 1 APPPATH\Views\dashboard\ringkasan.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan_beli', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\dashboard\\ringkasan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/ringkasan', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('dashboard/ringkasan')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 08:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 08:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 09:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 09:35:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:id_item_po` IS NOT NULL AND id_produk:' at line 3 in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(54): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-11 09:35:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:id_item_po` IS NOT NULL AND id_produk:' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:', [...], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(54): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:35:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:id_item_po` IS NOT NULL AND id_produk:' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:', [...], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(54): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:35:59 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:id_item_po` IS NOT NULL AND id_produk:' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL AND `id_produk` `:id_item_po` IS NOT NULL AND id_produk:', [...], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(54): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 09:39:51 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\lti-inventori\app\Models\ModelItem.php(92): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(54): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-11 09:39:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\ModelItem.php(92): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Dashboard.php(54): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:39:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Models\ModelItem.php(92): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Dashboard.php(54): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:39:51 --> [Caused by] mysqli_sql_exception: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\ModelItem.php(92): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Dashboard.php(54): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 09:44:07 --> mysqli_sql_exception: Unknown column 'id_produk' in 'IN/ALL/ANY subquery' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\lti-inventori\app\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-11 09:44:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:44:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:44:07 --> [Caused by] mysqli_sql_exception: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 09:44:09 --> mysqli_sql_exception: Unknown column 'id_produk' in 'IN/ALL/ANY subquery' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\lti-inventori\app\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-11 09:44:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:44:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:44:09 --> [Caused by] mysqli_sql_exception: Unknown column 'id_produk' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NOT NULL
+AND `id_produk` IN (SELECT id_produk FROM item_po WHERE id = item.id_item_po)', [], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\ModelItem.php(93): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:45:16 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 APPPATH\Models\ModelItem.php(97): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(57): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:46:33 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 APPPATH\Models\ModelItem.php(97): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(55): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:46:35 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 APPPATH\Models\ModelItem.php(97): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(55): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:46:36 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 APPPATH\Models\ModelItem.php(97): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(55): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:48:11 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', false)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false)
+ 3 APPPATH\Models\ModelItem.php(103): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:48:12 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', false)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false)
+ 3 APPPATH\Models\ModelItem.php(103): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:48:13 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', false)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false)
+ 3 APPPATH\Models\ModelItem.php(103): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 09:48:14 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false, 'AND ', false)
+ 2 SYSTEMPATH\Model.php(877): CodeIgniter\Database\BaseBuilder->whereIn('id_produk', 'SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', false)
+ 3 APPPATH\Models\ModelItem.php(103): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 09:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 09:50:27 --> mysqli_sql_exception: Unknown column 'item.id_item_po' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_prod...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_prod...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_prod...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_prod...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\app\Models\ModelItem.php(94): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\app\Models\ModelItem.php(101): App\Models\ModelItem->getProdukIdSubquery()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-11 09:50:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item.id_item_po' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', [], false)
+ 2 APPPATH\Models\ModelItem.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelItem.php(101): App\Models\ModelItem->getProdukIdSubquery()
+ 4 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:50:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item.id_item_po' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', [], false)
+ 4 APPPATH\Models\ModelItem.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\ModelItem.php(101): App\Models\ModelItem->getProdukIdSubquery()
+ 6 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 09:50:27 --> [Caused by] mysqli_sql_exception: Unknown column 'item.id_item_po' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_produk`
+FROM `item_po`
+WHERE `id` = `item`.`id_item_po`', [], false)
+ 5 APPPATH\Models\ModelItem.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\ModelItem.php(101): App\Models\ModelItem->getProdukIdSubquery()
+ 7 APPPATH\Controllers\Dashboard.php(56): App\Models\ModelItem->countItemsWithIdPoNotNullAndIdProduk('1')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 10:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 10:03:47 --> BadMethodCallException: Call to undefined method App\Models\ModelItemPO::sum
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Dashboard.php(53): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 10:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 10:05:04 --> BadMethodCallException: Call to undefined method App\Models\ModelItemPO::sum
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Dashboard.php(53): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 10:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 10:05:05 --> BadMethodCallException: Call to undefined method App\Models\ModelItemPO::sum
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Dashboard.php(53): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-11 10:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-11 10:07:32 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\lti-inventori\app\Controllers\Dashboard.php(55): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-11 10:07:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(55): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 10:07:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(55): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-11 10:07:32 --> [Caused by] mysqli_sql_exception: Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `item`
+WHERE `id_item_po` IS NULL
+AND `id_produk` = :id_produk:', [...], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(55): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

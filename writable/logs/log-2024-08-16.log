@@ -1,0 +1,8 @@
+CRITICAL - 2024-08-16 08:48:05 --> TypeError: date_format(): Argument #1 ($object) must be of type DateTimeInterface, bool given
+in APPPATH/Helpers/Date_Custom_helper.php on line 15.
+ 1 APPPATH/Helpers/Date_Custom_helper.php(15): date_format()
+ 2 APPPATH/Controllers/DeliveryOrder.php(97): mysql_date()
+ 3 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\DeliveryOrder->list()
+ 4 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

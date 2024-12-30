@@ -1,0 +1,1015 @@
+CRITICAL - 2024-06-28 14:41:00 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\Po.php(35): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Po->generate_pdf('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Po))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 17:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 17:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 17:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 17:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:33:30 --> mysqli_sql_exception: Unknown column 'item_do.id_po' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:33:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do.id_po' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = :item_do.id_po:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:33:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do.id_po' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = :item_do.id_po:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:33:30 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do.id_po' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do`.`id_po` = :item_do.id_po:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:00 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:00 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:01 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:01 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:01 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:01 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:02 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:02 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:56 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:56 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:57 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:57 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:58 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:58 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-28 17:36:58 --> mysqli_sql_exception: Unknown column 'item_do' in 'where clause' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 17:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:58 --> [Caused by] mysqli_sql_exception: Unknown column 'item_do' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `item_do`.`id` as `id_item_do`, `produk`.`merek`, `produk`.`model`, `produk`.`tipe`, `produk`.`id` as `id_produk`, `item_do`.`jumlah`
+FROM `item_do`
+JOIN `produk` ON `produk`.`id` = `item_do`.`id_produk`
+WHERE `item_do` = :item_do:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelItemDo.php(26): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\DeliveryOrder.php(103): App\Models\ModelItemDo->getItemDoByIdPo('2')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:37:36 --> ErrorException: Undefined variable $po
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:38:06 --> ErrorException: Undefined variable $po
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:38:46 --> ErrorException: Undefined variable $po
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:40:49 --> ErrorException: Undefined variable $po
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:41:35 --> ErrorException: Undefined variable $po
+in APPPATH\Views\po\pdf_view.php on line 86.
+ 1 APPPATH\Views\po\pdf_view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\po\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('po/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('po/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 17:42:20 --> ErrorException: Undefined array key "jumlah_item"
+in APPPATH\Views\do\pdf_view.php on line 130.
+ 1 APPPATH\Views\do\pdf_view.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_item"', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php', 130)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('do/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(104): view('do/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 17:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 18:28:38 --> BadMethodCallException: Call to undefined method App\Models\ModelItemDo::getItemDoByIdPo
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\DeliveryOrder.php(103): CodeIgniter\Model->__call('getItemDoByIdPo', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('2')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 18:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 18:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 19:01:57 --> ErrorException: Undefined array key "serial_number"
+in APPPATH\Views\do\pdf_view.php on line 160.
+ 1 APPPATH\Views\do\pdf_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "serial_number"', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('do/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): view('do/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('3')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 19:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 19:02:22 --> ErrorException: Undefined array key "mac_address"
+in APPPATH\Views\do\pdf_view.php on line 161.
+ 1 APPPATH\Views\do\pdf_view.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mac_address"', 'C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php', 161)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\lti-inventori\\app\\Views\\do\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('do/pdf_view', [], true)
+ 5 APPPATH\Controllers\DeliveryOrder.php(103): view('do/pdf_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DeliveryOrder->generate_pdf('3')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliveryOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 19:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 19:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,1495 @@
+INFO - 2024-06-25 07:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 07:52:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'persediaan', 3306, '', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\lti-inventori\app\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 07:52:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 07:53:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'persediaan', 3306, '', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lti-inventori\app\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\lti-inventori\app\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+#7 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 07:53:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Autentikasi.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Autentikasi->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:57:23 --> mysqli_sql_exception: Table 'persediaan.rma' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:57:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.rma' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:57:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.rma' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:57:23 --> [Caused by] mysqli_sql_exception: Table 'persediaan.rma' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `rma`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:40 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:40 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:41 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:41 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:42 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:42 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:42 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:42 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:43 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:43 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:58:43 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:58:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:58:43 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 09:59:00 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:59:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:00 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 09:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 09:59:15 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:59:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:15 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 09:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 09:59:44 --> mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 09:59:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:59:44 --> [Caused by] mysqli_sql_exception: Table 'persediaan.produk_rusak' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `produk_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 09:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 10:00:58 --> mysqli_sql_exception: Unknown column 'rma.id' in 'field list' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 10:00:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:00:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:00:58 --> [Caused by] mysqli_sql_exception: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 10:00:59 --> mysqli_sql_exception: Unknown column 'rma.id' in 'field list' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 10:00:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:00:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:00:59 --> [Caused by] mysqli_sql_exception: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 10:01:00 --> mysqli_sql_exception: Unknown column 'rma.id' in 'field list' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 10:01:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:01:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:01:00 --> [Caused by] mysqli_sql_exception: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 10:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 10:01:45 --> mysqli_sql_exception: Unknown column 'rma.id' in 'field list' in C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`i...', 0)
+#1 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`i...')
+#2 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`i...')
+#3 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`i...', Array, false)
+#4 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lti-inventori\app\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lti-inventori\app\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+#8 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Rma->list()
+#9 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+#10 C:\xampp\htdocs\lti-inventori\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lti-inventori\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-25 10:01:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:01:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:01:45 --> [Caused by] mysqli_sql_exception: Unknown column 'rma.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rma`.`id`, CONCAT(produk.merek, " ", `produk`.`model`, "-", produk.tipe) AS produk, `item`.`nomor_seri`, `rma`.`masalah`, `rma`.`status`, `rma`.`catatan`, `rma`.`ditambahkan_oleh`, `rma`.`ditambahkan_pada`, `rma`.`terakhir_update_oleh`, `rma`.`terakhir_update_pada`, `rma`.`jenis`
+FROM `item_rusak`
+JOIN `item` ON `item`.`id` = `rma`.`id_item`
+JOIN `item_po` ON `item_po`.`id` = `item`.`id_item_po`
+JOIN `produk` ON `produk`.`id` = `item_po`.`id_produk`', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelRma.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Rma.php(16): App\Models\ModelRma->getRmaDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 10:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 10:02:51 --> Error: Call to undefined function status_jenis()
+in APPPATH\Views\rma\list.php on line 47.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('rma/list', [], true)
+ 4 APPPATH\Controllers\Rma.php(21): view('rma/list')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 10:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 10:02:52 --> Error: Call to undefined function status_jenis()
+in APPPATH\Views\rma\list.php on line 47.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('rma/list', [], true)
+ 4 APPPATH\Controllers\Rma.php(21): view('rma/list')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Rma->list()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rma))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-25 10:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 10:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 10:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 10:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
