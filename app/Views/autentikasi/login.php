@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/vendors/styles/style.css" />
 	<style>
 		body {
-			background-image: url('<?= base_url() ?>/assets/vendors/images/background.jpg');
+			background-image: url('<?= base_url() ?>/assets/vendors/images/back.jpg');
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -45,7 +45,7 @@
 					<div class="login-box bg-light box-shadow border-radius-10">
 						<div class="center mx-auto">
 							<a href=" https://www.telkom.co.id/">
-								<center><img alt="Responsive image" style="width:110px;height:50px;" src="<?= base_url() ?>/assets/vendors/images/lti-logo2.png" alt=""></center>
+								<center><img alt="Responsive image" style="width:110px;height:50px;" src="<?= base_url() ?>/assets/vendors/images/logo.png" alt=""></center>
 							</a>
 							<br>
 						</div>
@@ -72,7 +72,7 @@
 						</form>
 						<div class="mb-1">
 							<div class="center">
-								<h6 class="text-center text-dark"><br><br>© Telkom Indonesia</h6>
+								<h6 class="text-center text-dark"><br><br>© Telkom Akses</h6>
 							</div>
 						</div>
 					</div>

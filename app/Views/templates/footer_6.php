@@ -1,5 +1,5 @@
 <div class="footer-wrap pd-20 mb-20 card-box">
-    &copy; <span id="currentYear"></span> Telkom Indonesia.
+    &copy; <span id="currentYear"></span> Telkom Akses.
 </div>
 </div>
 </div>
