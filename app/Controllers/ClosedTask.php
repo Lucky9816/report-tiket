@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ModelTiketReguler;
 use App\Models\ModelBuktiTiket;
+use App\Models\ModelPengguna;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
@@ -19,24 +20,24 @@ class ClosedTask extends BaseController
         // Get all tickets assigned to the logged-in user (assuming 'petugas' is the logged-in user ID)
         $ModelTiketReguler = new ModelTiketReguler();
         $data['tiket_reguler'] = $ModelTiketReguler->where('petugas', $data['pengguna']['id'])->findAll();
-        
+
         return view('templates/header_1', $data)
-        . view('templates/topbar_2')
-        . view('templates/right_sidebar_3')
-        . view('templates/left_sidebar_4')
-        . view('closed_task/input')
-        . view('templates/footer_6');
+            . view('templates/topbar_2')
+            . view('templates/right_sidebar_3')
+            . view('templates/left_sidebar_4')
+            . view('closed_task/input')
+            . view('templates/footer_6');
     }
 
     public function post()
     {
         // Ambil data input dari form, kecuali yang disabled
         $data = $this->request->getPost([
-            'no_tiket', 
-            'jenis_pekerjaan', 
-            'sto', 
-            'hasil_pengecekan', 
-            'hasil_perbaikan', 
+            'no_tiket',
+            'jenis_pekerjaan',
+            'sto',
+            'hasil_pengecekan',
+            'hasil_perbaikan',
             'gpon'
         ]);
 
@@ -94,11 +95,11 @@ class ClosedTask extends BaseController
     {
         $noTiket = $this->request->getPost('no_tiket'); // Ambil nilai no_tiket dari post request
         $modelTiketReguler = new ModelTiketReguler();
-        
+
         // Cek apakah no_tiket ada dan valid
         if ($noTiket) {
             $data = $modelTiketReguler->getDataByNoTiket($noTiket); // Ambil data dari model
-            
+
             if ($data) {
                 return $this->response->setJSON([
                     'status' => 'success',
@@ -119,5 +120,66 @@ class ClosedTask extends BaseController
             ]);
         }
     }
-}
 
+    public function generate_pdf($no_tiket)
+    {
+        ob_start();
+
+        // Dekripsi no_tiket jika diperlukan
+        $no_tiket = decrypt($no_tiket);
+
+        // Inisialisasi model
+        $ModelTiketReguler = new ModelTiketReguler();
+        $ModelBuktiTiket = new ModelBuktiTiket();
+        $ModelPengguna = new ModelPengguna();
+
+        // Ambil data tiket reguler berdasarkan no_tiket
+        $data['tiket'] = $ModelTiketReguler->where('no_tiket', $no_tiket)->first();
+
+        // Ambil data bukti tiket berdasarkan no_tiket
+        $data['bukti_tiket'] = $ModelBuktiTiket->where('no_tiket', $no_tiket)->first();
+
+        // Ambil data pengguna berdasarkan petugas dari tiket reguler
+        if (!empty($data['tiket']['petugas'])) {
+            $data['petugas'] = $ModelPengguna->find($data['tiket']['petugas']);
+        } else {
+            $data['petugas'] = null;
+        }
+
+        // Pastikan data tidak kosong
+        if (empty($data['tiket']) || empty($data['bukti_tiket'])) {
+            throw new \Exception("Data tidak ditemukan atau kosong.");
+        }
+
+        // Render view menjadi HTML
+        $html = view('closed_task/pdf_view', $data);
+
+        // Bersihkan output buffering
+        ob_end_clean();
+
+
+        // Buat opsi Dompdf
+        $options = new Options();
+        $options->set('defaultFont', 'times');
+        $options->set('isRemoteEnabled', true);
+
+
+        // Inisialisasi Dompdf dengan opsi
+        $dompdf = new Dompdf($options);
+
+        // Muat HTML ke Dompdf
+        $dompdf->loadHtml($html);
+
+        // Setel ukuran dan orientasi kertas
+        // Setel ukuran dan orientasi kertas
+        $dompdf->setPaper('A4', 'landscape');
+
+
+        // Render PDF
+        $dompdf->render();
+
+        // Stream PDF ke browser
+        $dompdf->stream("tiket_$no_tiket.pdf", array("Attachment" => 0));
+        exit();
+    }
+}

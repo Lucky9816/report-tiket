@@ -66,14 +66,19 @@
                                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                                                             <i class="dw dw-more"></i>
                                                         </a>
-                            
                                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                                        <?php
-if ($d['status'] == 1) {
-    echo '<a class="dropdown-item" href="' . base_url() . 'mytask_tiket_reguler/update/' . encrypt($d['id_tiket_reguler']) . '"><i class="dw dw-edit2"></i> Update In Progress</a>';
-}
-?>
-                                                    </div>
+                                                            <?php if ($d['status'] == 1) : ?>
+                                                                <a class="dropdown-item" href="<?= base_url(); ?>mytask_tiket_reguler/update/<?= encrypt($d['id_tiket_reguler']); ?>">
+                                                                    <i class="dw dw-edit2"></i> Update In Progress
+                                                                </a>
+                                                            <?php endif; ?>
+
+                                                            <?php if ($d['status'] == 3) : ?>
+                                                                <a class="dropdown-item" href="<?= base_url(); ?>closed_tiket_reguler/generate_pdf/<?= encrypt($d['no_tiket']); ?>">
+                                                                    <i class="dw dw-edit2"></i> Cetak Laporan
+                                                                </a>
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>

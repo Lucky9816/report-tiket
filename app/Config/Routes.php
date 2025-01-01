@@ -38,4 +38,6 @@ $routes->get('/mytask_tiket_reguler/update/(:any)', 'MyTask::update_reguler/$1',
 $routes->get('/closed_tiket_reguler', 'ClosedTask::input', ['filter' => 'auth']);
 $routes->post('/closed_tiket_reguler/getServiceDetails', 'ClosedTask::getServiceDetails', ['filter' => 'auth']);
 $routes->post('/closed_tiket_reguler/post', 'ClosedTask::post', ['filter' => 'auth']);
+$routes->get('/closed_tiket_reguler/generate_pdf/(:any)', 'ClosedTask::generate_pdf/$1', ['filter' => 'auth']);
 
+$routes->get('uploads/(:any)', 'ImageController::show/$1');
