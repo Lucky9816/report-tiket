@@ -152,6 +152,12 @@
                                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                                                                 <a class="dropdown-item" href="<?= base_url(); ?>tiket_reguler/edit/<?= encrypt($d['id_tiket_reguler']); ?>"><i class="dw dw-edit2"></i> Edit</a>
                                                                 <a href="<?= base_url(); ?>tiket_reguler/delete/<?= encrypt($d['id_tiket_reguler']); ?>" class="dropdown-item delete-confirm"><i class="dw dw-delete-3"></i> Hapus</a>
+
+                                                                <?php if ($d['status'] == 3) : ?>
+                                                                    <a class="dropdown-item" href="<?= base_url(); ?>closed_tiket_reguler/generate_pdf/<?= encrypt($d['no_tiket']); ?>">
+                                                                        <i class="dw dw-edit2"></i> Cetak Laporan
+                                                                    </a>
+                                                                <?php endif; ?>
                                                             </div>
                                                         </div>
                                                     </td>
