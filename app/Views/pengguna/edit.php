@@ -41,28 +41,16 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-md-2 col-form-label">Hak Akses</label>
                                                 <div class="custom-control custom-radio col-md-3">
-                                                    &nbsp;<input type="radio" id="customRadio1" name="hak_akses" class="custom-control-input" value="0" required <?php if ($pengguna_edit['hak_akses'] == 0) {
+                                                    &nbsp;<input type="radio" id="customRadio1" name="hak_akses" class="custom-control-input" value="1" required <?php if ($pengguna_edit['hak_akses'] == 1) {
                                                                                                                                                                 echo "checked";
                                                                                                                                                             } ?>>
-                                                    <label class="custom-control-label" for="customRadio1">Manajer Operasional</label>
+                                                    <label class="custom-control-label" for="customRadio1">Admin</label>
                                                 </div>
                                                 <div class="custom-control custom-radio col-md-2">
-                                                    <input type="radio" id="customRadio2" name="hak_akses" class="custom-control-input" value="1" required <?php if ($pengguna_edit['hak_akses'] == 1) {
+                                                    <input type="radio" id="customRadio2" name="hak_akses" class="custom-control-input" value="2" required <?php if ($pengguna_edit['hak_akses'] == 2) {
                                                                                                                                                             echo "checked";
                                                                                                                                                         } ?>>
-                                                    <label class="custom-control-label" for="customRadio2">Sales</label>
-                                                </div>
-                                                <div class="custom-control custom-radio col-md-2">
-                                                    <input type="radio" id="customRadio3" name="hak_akses" class="custom-control-input" value="2" required <?php if ($pengguna_edit['hak_akses'] == 2) {
-                                                                                                                                                            echo "checked";
-                                                                                                                                                        } ?>>
-                                                    <label class="custom-control-label" for="customRadio3">Admin</label>
-                                                </div>
-                                                <div class="custom-control custom-radio col-md-3">
-                                                    <input type="radio" id="customRadio4" name="hak_akses" class="custom-control-input" value="3" required <?php if ($pengguna_edit['hak_akses'] == 3) {
-                                                                                                                                                            echo "checked";
-                                                                                                                                                        } ?>>
-                                                    <label class="custom-control-label" for="customRadio4">Teknisi QC dan Gudang</label>
+                                                    <label class="custom-control-label" for="customRadio2">Petugas</label>
                                                 </div>
                                             </div>
                                         <center>
