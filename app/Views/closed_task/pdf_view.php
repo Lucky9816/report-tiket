@@ -87,7 +87,8 @@
             <p><strong>No. Service:</strong> <?= esc($tiket['no_service']) ?></p>
             <p><strong>Tipe Service:</strong> <?= esc(tipe_service($tiket['tipe_service'])) ?></p>
             <p><strong>Keterangan:</strong> <?= esc($tiket['keterangan']) ?></p>
-            <p><strong>Petugas:</strong> <?= esc($petugas ? $petugas['nama'] : 'Tidak Ditentukan') ?></p>
+            <p><strong>Petugas 1:</strong> <?= esc($petugas ? $petugas['nama'] : 'Tidak Ditentukan') ?></p>
+            <p><strong>Petugas 2:</strong> <?= esc($petugas2 ? $petugas2['nama'] : 'Tidak Ditentukan') ?></p>
             <p><strong>Jenis Pekerjaan:</strong> <?= esc(jenis_pekerjaan($tiket['jenis_pekerjaan'])) ?></p>
             <p><strong>Hasil Pengecekan:</strong> <?= esc($tiket['hasil_pengecekan']) ?></p>
             <p><strong>Hasil Perbaikan:</strong> <?= esc($tiket['hasil_perbaikan']) ?></p>
@@ -107,7 +108,7 @@
                 </div>
             <?php 
                     }
-                }
+              }
             ?>
         </div>
 

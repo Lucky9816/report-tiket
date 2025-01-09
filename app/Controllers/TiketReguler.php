@@ -46,6 +46,7 @@ class TiketReguler extends BaseController
             'keterangan' => $this->request->getVar('keterangan'),
             'ditambahkan_oleh' => $session->get('id'),
             'petugas' => $this->request->getVar('petugas'),
+            'petugas2' => $this->request->getVar('petugas2'),
         ];
         $ModelTiketReguler->insert($data);
         return redirect()->back()->with('message', 1);
@@ -82,6 +83,7 @@ class TiketReguler extends BaseController
             'tipe_service' => $this->request->getVar('tipe_service'),
             'keterangan' => $this->request->getVar('keterangan'),
             'petugas' => $this->request->getVar('petugas'),
+            'petugas2' => $this->request->getVar('petugas2'),
         ];
         $existingData = $ModelTiketReguler->find($id);
         $changedData = array_diff_assoc($data, $existingData);

@@ -23,9 +23,13 @@ class MyTask extends BaseController
 
         // Fetch Tiket Reguler data where 'petugas' equals the logged-in user's ID
         $data['tiket_reguler'] = $ModelTiketReguler
-            ->where('petugas', $user_id)  // Filter by 'petugas' (current logged-in user)
-            ->orderBy('id_tiket_reguler', 'DESC')  // Order by ticket ID (descending)
-            ->findAll();  // Fetch all matching records
+            ->groupStart() // Mulai grup kondisi
+            ->where('petugas', $user_id) // Kondisi pertama
+            ->orWhere('petugas2', $user_id) // Kondisi kedua
+            ->groupEnd() // Akhir grup kondisi
+            ->orderBy('id_tiket_reguler', 'DESC') // Urutkan berdasarkan ID tiket secara descending
+            ->findAll(); // Ambil semua hasil
+        // Fetch all matching records
 
         // Return the view with the data
         return view('templates/header_1', $data)

@@ -27,6 +27,12 @@
                                     <div class="flash-data" data-flashdata="<?= $session->getFlashdata('message'); ?>"></div>
                                     <form action="<?= base_url() ?>tiket_reguler/post" method="post">
                                         <div class=" form-group row">
+                                            <label class="col-sm-12 col-md-2 col-form-label">Paste Data</label>
+                                            <div class="col-sm-12 col-md-10">
+                                                <textarea class="form-control" name="paste_data"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class=" form-group row">
                                             <label class="col-sm-12 col-md-2 col-form-label">No Tiket</label>
                                             <div class="col-sm-12 col-md-10">
                                                 <input class="form-control" type="text" name="no_tiket" value="<?= old('no_tiket') ?>" required>
@@ -90,7 +96,28 @@
                                                 </select>
                                             </div>
                                         </div>
-
+                                        <div class="form-group row" id="petugas-2-container" style="display: none;">
+                                            <label class="col-sm-12 col-md-2 col-form-label">Petugas 2</label>
+                                            <div class="col-sm-12 col-md-10">
+                                                <select class="form-control custom-select2" name="petugas2" id="petugas2" style="width: 100%; height: 38px">
+                                                    <option value="" selected disabled hidden>Pilih Petugas</option>
+                                                    <?php if (!empty($petugas)): ?>
+                                                        <?php foreach ($petugas as $petugas_item): ?>
+                                                            <option value="<?= $petugas_item['id']; ?>">
+                                                                <?= $petugas_item['nama']; ?>
+                                                            </option>
+                                                        <?php endforeach; ?>
+                                                    <?php else: ?>
+                                                        <option value="">No petugas available</option>
+                                                    <?php endif; ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-12 col-md-10 offset-md-2">
+                                                <button type="button" id="add-petugas-2" class="btn btn-secondary">Tambah Petugas 2</button>
+                                            </div>
+                                        </div>
                                         <center>
                                             <button type="submit" class="btn btn-primary">
                                                 Simpan
@@ -138,7 +165,13 @@
                                                     <td><?php echo $d['no_service']; ?></td>
                                                     <td><?php echo tipe_service($d['tipe_service']); ?></td>
                                                     <td><?php echo $d['keterangan']; ?></td>
-                                                    <td><?php echo pengguna_define($d['petugas']); ?></td>
+                                                    <td>
+                                                        <strong>Petugas 1:</strong> <?php echo pengguna_define($d['petugas']); ?><br>
+                                                        <?php if (!empty($d['petugas2'])): ?>
+                                                            <strong>Petugas 2:</strong> <?php echo pengguna_define($d['petugas2']); ?>
+                                                        <?php endif; ?>
+                                                    </td>
+
                                                     <td><?php echo format_indo($d['tgl_selesai']); ?></td>
                                                     <td>
                                                         Dibuat Oleh: <?php echo pengguna_define($d['ditambahkan_oleh']); ?> <br>
@@ -197,4 +230,63 @@
         <script>
             const user_manage = document.querySelector('#tiket_reguler');
             user_manage.classList.add('active');
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Ambil elemen textarea
+                const textarea = document.querySelector('textarea[name="paste_data"]');
+
+                // Tambahkan event listener untuk paste
+                textarea.addEventListener("paste", function(event) {
+                    // Tunggu data selesai dimasukkan
+                    setTimeout(() => {
+                        // Ambil nilai data yang dipaste
+                        const pastedData = textarea.value;
+
+                        // Pisahkan data berdasarkan //
+                        const parts = pastedData.split("//");
+
+                        // Pastikan format data sesuai
+                        if (parts.length >= 5) {
+                            // Ambil data yang di-parse
+                            const noTiket = parts[0];
+                            const noService = parts[1];
+                            const nama = parts[2];
+                            const noHP = parts[3];
+                            const masalah = parts[4];
+
+                            // Format keterangan
+                            const formattedKeterangan = `Nama : ${nama}\nNo.HP : ${noHP}\nMasalah : ${masalah}`;
+
+                            // Isi input lainnya
+                            document.querySelector('input[name="no_tiket"]').value = noTiket;
+                            document.querySelector('input[name="no_service"]').value = noService;
+                            document.querySelector('textarea[name="keterangan"]').value = formattedKeterangan;
+
+                            // Pindahkan fokus ke elemen berikutnya (Devisi)
+                            document.querySelector('#devisi').focus();
+                        } else {
+                            alert("Format data yang dipaste tidak sesuai!");
+                        }
+                    }, 100); // Tunggu data selesai dipaste
+                });
+            });
+        </script>
+        <!-- Tombol untuk menambah Petugas 2 -->
+
+
+        <!-- Input untuk Petugas 2 (hidden secara default) -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Tombol tambah petugas 2
+                const addPetugas2Button = document.getElementById("add-petugas-2");
+                const petugas2Container = document.getElementById("petugas-2-container");
+
+                // Event listener ketika tombol diklik
+                addPetugas2Button.addEventListener("click", function() {
+                    // Tampilkan input petugas 2
+                    petugas2Container.style.display = "flex";
+                });
+            });
         </script>

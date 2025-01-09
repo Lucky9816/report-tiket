@@ -19,7 +19,13 @@ class ClosedTask extends BaseController
 
         // Get all tickets assigned to the logged-in user (assuming 'petugas' is the logged-in user ID)
         $ModelTiketReguler = new ModelTiketReguler();
-        $data['tiket_reguler'] = $ModelTiketReguler->where('petugas', $data['pengguna']['id'])->findAll();
+        $data['tiket_reguler'] = $ModelTiketReguler
+            ->groupStart() // Mulai grup untuk logika OR
+            ->where('petugas', $data['pengguna']['id'])
+            ->orWhere('petugas2', $data['pengguna']['id'])
+            ->groupEnd() // Akhiri grup
+            ->findAll(); // Ambil semua hasil
+
 
         return view('templates/header_1', $data)
             . view('templates/topbar_2')
@@ -144,6 +150,12 @@ class ClosedTask extends BaseController
             $data['petugas'] = $ModelPengguna->find($data['tiket']['petugas']);
         } else {
             $data['petugas'] = null;
+        }
+
+        if (!empty($data['tiket']['petugas2'])) {
+            $data['petugas2'] = $ModelPengguna->find($data['tiket']['petugas2']);
+        } else {
+            $data['petugas2'] = null;
         }
 
         // Pastikan data tidak kosong
